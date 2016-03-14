@@ -9,9 +9,13 @@
     repo: https://github.com/lsulibraries/geauxshax-shax-objects-feature.git
     dest: "{{ drupal_core_path }}/sites/all/modules/shax_objects"
 
+
+
 - name: Enable features
     command: "drush -y en {{ item }}"
     args:
+      chdir: "{{ drupal_core_path }}/sites/all/modules/local_roles"
+
   with_items:
     - instructor_role
     - student_role
