@@ -1,0 +1,20 @@
+---
+- name: get submodule uniques
+  command: "drush dl -y {{ item  }}!"
+  args:
+    chdir: "{{ drupal_core_path }}"
+  with_items: "{{ geaux_shax_modules }}"
+
+- name: enable submodule uniques
+  command: "drush en -y {{ geaux_shax_modules }}"
+  args:
+   chdir: "{{ drupal_core_path }}"
+  with_items: "{{ geaux_shax_modules }}"
+
+- include: features.yml
+
+- name: Set permission
+  file:
+    path: "{{ drupal_core_path }}/sites/all/modules/"
+    owner: www-data
+    recurse: yes

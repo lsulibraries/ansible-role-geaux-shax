@@ -1,0 +1,19 @@
+# in adition to ansible-drupal basebox modules are these unique to a submodle (under roles)
+
+geaux_shax_modules:
+ - module_filter
+ - views_ui
+ - skeletontheme
+ - feeds_ui
+ - feeds_import
+ - feeds_tamper_ui
+ - node_reference
+ - entityreference
+ - image_resize_filter
+ - mediafield
+ - pathauto
+ - responsive_menus
+ - special_menu_items
+ - wysiwyg_mediaembed
+
+# these modules are basic drupal modules that are cloned in tasks.
