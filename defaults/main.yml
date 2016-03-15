@@ -10,7 +10,6 @@ geaux_shax_modules:
  - node_reference
  - entityreference
  - image_resize_filter
- - mediafield
  - pathauto
  - responsive_menus
  - special_menu_items
