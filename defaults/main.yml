@@ -2,6 +2,17 @@
 
 geaux_shax_modules:
  - module_filter
+ - skeletontheme
+ - entityreference
+ - image_resize_filter
+ - pathauto
+ - responsive_menus
+ - special_menu_items
+ - wysiwyg_mediaembed
+ - better_exposed_filters
+
+geaux_shax_modules_to_be_enabled:
+ - module_filter
  - views_ui
  - skeletontheme
  - feeds_ui
