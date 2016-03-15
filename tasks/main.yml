@@ -1,6 +1,6 @@
 ---
 - name: get submodule uniques
-  command: "drush dl -y {{ item  }}!"
+  command: "drush dl -y {{ item  }}"
   args:
     chdir: "{{ drupal_core_path }}"
   with_items: "{{ geaux_shax_modules }}"
