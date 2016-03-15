@@ -6,10 +6,10 @@
   with_items: "{{ geaux_shax_modules }}"
 
 - name: enable submodule uniques
-  command: "drush en -y {{ geaux_shax_modules }}"
+  command: "drush en -y {{ item }}"
   args:
    chdir: "{{ drupal_core_path }}"
-  with_items: "{{ geaux_shax_modules }}"
+  with_items: "{{ geaux_shax_modules_to_be_enabled }}"
 
 - include: features.yml
 

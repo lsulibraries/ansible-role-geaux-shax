@@ -1,6 +1,6 @@
 ---
 - name: Pull in role features
-    git:
+  git:
     repo: https://github.com/lsulibraries/features-hist3119-s16.git
     dest: "{{ drupal_core_path }}/sites/all/modules/local_roles"
 
@@ -9,13 +9,10 @@
     repo: https://github.com/lsulibraries/geauxshax-shax-objects-feature.git
     dest: "{{ drupal_core_path }}/sites/all/modules/shax_objects"
 
-
-
 - name: Enable features
-    command: "drush -y en {{ item }}"
-    args:
-      chdir: "{{ drupal_core_path }}/sites/all/modules/local_roles"
-
+  command: "drush -y en {{ item }}"
+  args:
+     chdir: "{{ drupal_core_path }}/sites/all/modules/local_roles"
   with_items:
     - instructor_role
     - student_role
