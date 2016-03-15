@@ -15,5 +15,6 @@ geaux_shax_modules:
  - responsive_menus
  - special_menu_items
  - wysiwyg_mediaembed
+ - better_exposed_filters
 
 # these modules are basic drupal modules that are cloned in tasks.
