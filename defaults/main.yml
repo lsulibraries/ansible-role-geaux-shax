@@ -27,4 +27,8 @@ geaux_shax_modules_to_be_enabled:
  - wysiwyg_mediaembed
  - better_exposed_filters
 
+geaux_shax_features:
+ - instructor_role
+ - student_role
+ - shax_objects
 # these modules are basic drupal modules that are cloned in tasks.
