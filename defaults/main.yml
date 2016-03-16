@@ -10,6 +10,7 @@ geaux_shax_modules:
  - special_menu_items
  - wysiwyg_mediaembed
  - better_exposed_filters
+ - ckeditor
 
 geaux_shax_modules_to_be_enabled:
  - module_filter
@@ -26,6 +27,7 @@ geaux_shax_modules_to_be_enabled:
  - special_menu_items
  - wysiwyg_mediaembed
  - better_exposed_filters
+ - ckeditor
 
 geaux_shax_features:
  - instructor_role
