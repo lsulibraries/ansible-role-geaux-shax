@@ -14,6 +14,12 @@
   args:
      chdir: "{{ drupal_core_path }}/sites/all/modules/local-features"
   with_items: "{{ geaux_shax_features }}"
+  
+  - name: Enable features
+  command: "drush -y en {{ item }}"
+  args:
+     chdir: "{{ drupal_core_path }}/sites/all/modules/local-features/shax_roles"
+  with_items: "{{ geaux_shax_role }}"
 
 - name: revert features
   command: "drush fr -y {{ item }}"
