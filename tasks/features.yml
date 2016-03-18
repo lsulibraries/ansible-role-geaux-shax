@@ -1,8 +1,8 @@
 ---
-- name: Pull in role features
+- name: Pull in shax roles
   git:
     repo: https://github.com/lsulibraries/shax_roles
-    dest: "{{ drupal_core_path }}/sites/all/modules/local-features
+    dest: "{{ drupal_core_path }}/sites/all/modules/local-features/shax-roles
 
 - name: pull in shax features
   git:
@@ -19,7 +19,7 @@
   command: "drush -y en {{ item }}"
   args:
      chdir: "{{ drupal_core_path }}/sites/all/modules/local-features/shax_roles"
-  with_items: "{{ geaux_shax_role }}"
+  with_items: "{{ geaux_shax_roles }}"
 
 - name: revert features
   command: "drush fr -y {{ item }}"
