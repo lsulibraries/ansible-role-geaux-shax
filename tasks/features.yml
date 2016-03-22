@@ -2,7 +2,7 @@
 - name: Pull in shax roles
   git:
     repo: https://github.com/lsulibraries/shax_roles
-    dest: "{{ drupal_core_path }}/sites/all/modules/local-features/shax-roles
+    dest: "{{ drupal_core_path }}/sites/all/modules/local-features/shax-roles"
 
 - name: pull in shax features
   git:
