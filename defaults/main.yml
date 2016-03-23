@@ -30,4 +30,4 @@ geaux_shax_modules_to_be_enabled:
 geaux_shax_features:
  - instructor_role
  - student_role
- - shax-object
+ - shax-objects
