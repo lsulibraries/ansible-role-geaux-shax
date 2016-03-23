@@ -10,8 +10,8 @@
      chdir: "{{ drupal_core_path }}/sites/all/modules/geauxshax-features"
   with_items: "{{ geaux_shax_features }}"
 
-#- name: revert features
-#  command: "drush fr -y {{ item }}"
-#  args:
-#    chdir: "{{ drupal_core_path }}"
-#  with_items: "{{ geaux_shax_features }}"
+- name: revert features
+  command: "drush fr -y {{ item }}"
+  args:
+    chdir: "{{ drupal_core_path }}"
+  with_items: "{{ geaux_shax_features }}"
