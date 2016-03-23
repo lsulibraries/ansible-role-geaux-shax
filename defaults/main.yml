@@ -1,4 +1,4 @@
-# in adition to ansible-drupal basebox modules are these unique to a submodle (under roles)
+# list variabes of drupal modules to drush dl from web
 
 geaux_shax_modules_dl:
  - module_filter
@@ -12,6 +12,7 @@ geaux_shax_modules_dl:
  - better_exposed_filters
  - ckeditor
 
+# list of modules and views to be enabled
 geaux_shax_modules_to_be_enabled:
  - module_filter
  - views_ui
@@ -29,8 +30,8 @@ geaux_shax_modules_to_be_enabled:
  - better_exposed_filters
  - ckeditor
 
+# lsu specific features for geaux-shax site
 geaux_shax_features:
  - instructor_role
  - student_role
  - shax-object
-# these modules are basic drupal modules that are cloned in tasks.
