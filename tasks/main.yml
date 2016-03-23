@@ -18,3 +18,6 @@
     path: "{{ drupal_core_path }}/sites/all/modules/"
     owner: www-data
     recurse: yes
+
+- name: set theme
+  command: drush vset theme_default skeletontheme
