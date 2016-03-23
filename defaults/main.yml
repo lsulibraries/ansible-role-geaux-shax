@@ -8,7 +8,6 @@ geaux_shax_modules_dl:
  - pathauto
  - responsive_menus
  - special_menu_items
- - wysiwyg_mediaembed
  - better_exposed_filters
  - ckeditor
 
@@ -20,14 +19,11 @@ geaux_shax_modules_to_be_enabled:
  - feeds_ui
  - feeds_import
  - feeds_tamper_ui
- - node_reference
  - entityreference
  - image_resize_filter
  - pathauto
  - responsive_menus
  - special_menu_items
- - wysiwyg_mediaembed
- - better_exposed_filters
  - ckeditor
 
 # lsu specific features for geaux-shax site
