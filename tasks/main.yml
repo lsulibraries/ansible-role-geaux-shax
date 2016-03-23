@@ -1,11 +1,11 @@
 ---
-- name: get submodule uniques
+- name: get geaux-shax specific drupal modules
   command: "drush dl -y {{ item  }}"
   args:
     chdir: "{{ drupal_core_path }}"
-  with_items: "{{ geaux_shax_modules }}"
+  with_items: "{{ geaux_shax_modules_dl }}"
 
-- name: enable submodule uniques
+- name: enable modules for geaux-shax
   command: "drush en -y {{ item }}"
   args:
    chdir: "{{ drupal_core_path }}"
