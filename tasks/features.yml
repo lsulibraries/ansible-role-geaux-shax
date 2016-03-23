@@ -1,11 +1,9 @@
 ---
-- name: Download geauxshax-features
+- name: clone geauxshax-features
   git:
     repo: https://github.com/lsulibraries/geauxshax-features
-    dest: "{{ drupal_core_path }}/sites/all/modules
-
-
-
+    dest: "{{ drupal_core_path }}/sites/all/modules"
+    
 - name: Enable features
   command: "drush -y en {{ item }}"
   args:
