@@ -1,6 +1,6 @@
 # in adition to ansible-drupal basebox modules are these unique to a submodle (under roles)
 
-geaux_shax_modules:
+geaux_shax_modules_dl:
  - module_filter
  - skeletontheme
  - entityreference
@@ -30,8 +30,7 @@ geaux_shax_modules_to_be_enabled:
  - ckeditor
 
 geaux_shax_features:
- - shax_objects
-geaux_shax_roles:
  - instructor_role
  - student_role
+ - shax-object
 # these modules are basic drupal modules that are cloned in tasks.
