@@ -1,28 +1,19 @@
 ---
-- name: Pull in shax roles
+- name: Download geauxshax-features
   git:
-    repo: https://github.com/lsulibraries/shax_roles
-    dest: "{{ drupal_core_path }}/sites/all/modules/local-features/shax-roles"
+    repo: https://github.com/lsulibraries/geauxshax-features
+    dest: "{{ drupal_core_path }}/sites/all/modules
 
-- name: pull in shax features
-  git:
-    repo: https://github.com/lsulibraries/geauxshax-shax-objects-feature.git
-    dest: "{{ drupal_core_path }}/sites/all/modules/local-features/shax_objects"
+
 
 - name: Enable features
   command: "drush -y en {{ item }}"
   args:
-     chdir: "{{ drupal_core_path }}/sites/all/modules/local-features/shax_objects"
+     chdir: "{{ drupal_core_path }}/sites/all/modules/geauxshax-features"
   with_items: "{{ geaux_shax_features }}"
-  
-  - name: Enable features
-  command: "drush -y en {{ item }}"
-  args:
-     chdir: "{{ drupal_core_path }}/sites/all/modules/local-features/shax_roles"
-  with_items: "{{ geaux_shax_roles }}"
 
-- name: revert features
-  command: "drush fr -y {{ item }}"
-  args:
-    chdir: "{{ drupal_core_path }}"
-  with_items: "{{ geaux_shax_features }}"
+#- name: revert features
+#  command: "drush fr -y {{ item }}"
+#  args:
+#    chdir: "{{ drupal_core_path }}"
+#  with_items: "{{ geaux_shax_features }}"
