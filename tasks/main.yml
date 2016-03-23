@@ -21,3 +21,5 @@
 
 - name: set theme
   command: drush vset theme_default skeletontheme
+  args:
+   chdir: "{{ drupal_core_path }}"
