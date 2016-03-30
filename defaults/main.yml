@@ -3,13 +3,6 @@
 geaux_shax_modules_dl:
  - module_filter
  - skeletontheme
- - entityreference
- - image_resize_filter
- - pathauto
- - responsive_menus
- - special_menu_items
- - better_exposed_filters
- - ckeditor
 
 # list of modules and views to be enabled
 geaux_shax_modules_to_be_enabled:
@@ -19,8 +12,6 @@ geaux_shax_modules_to_be_enabled:
  - feeds_ui
  - feeds_import
  - feeds_tamper_ui
- - entityreference
- - image_resize_filter
  - pathauto
  - responsive_menus
  - special_menu_items
@@ -31,3 +22,4 @@ geaux_shax_features:
  - instructor_role
  - student_role
  - shax_objects
+ - block_settings
